@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".end">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="384dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:onClick="replay"
+        android:text="play again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="quit"
+        android:text="quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
